@@ -1,0 +1,18 @@
+stripe:
+  secret_key:
+    ${env.STRIPE_SECRET_KEY}
+
+jwt:
+  secret: ${env.JWT_SECRET}
+  expiration:
+    time: 9000000
+
+spring:
+  datasource:
+    url: ${env.DB_URL}
+    password: ${env.DB_PASSWORD}
+    username: ${env.DB_USER}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
