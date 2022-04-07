@@ -15,6 +15,8 @@
 	<description>amazon-clone-backend</description>
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -106,7 +108,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</ver	sion>
+				<version>3.8.0</version>
 				<configuration>
 					<release>17</release>
 				</configuration>
