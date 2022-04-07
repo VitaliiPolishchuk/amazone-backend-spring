@@ -1,17 +1,17 @@
 stripe:
   secret_key:
-    ${env.STRIPE_SECRET_KEY}
+    ${STRIPE_SECRET_KEY}
 
 jwt:
-  secret: ${env.JWT_SECRET}
+  secret: ${JWT_SECRET}
   expiration:
     time: 9000000
 
 spring:
   datasource:
-    url: ${env.DB_URL}
-    password: ${env.DB_PASSWORD}
-    username: ${env.DB_USER}
+    url: ${DB_URL}
+    password: ${DB_PASSWORD}
+    username: ${DB_USER}
   jpa:
     show-sql: true
     hibernate:
